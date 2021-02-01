@@ -6,5 +6,10 @@
 
 module.exports = {
   /* Your site config here */
+  siteMetadata: {
+    title: "Gatsby Playground",
+    description: "Just learning gatsbyjs",
+    author: "@obddd"
+  },
   plugins: [],
 }
