@@ -1,9 +1,11 @@
 import React from 'react';
-import Header from "../examples/Header";
+import HeaderHooks from '../examples/Header-Hooks';
+import HeaderStatic from '../examples/Header-Static';
 const Examples = () => {
     return (
         <div>
-            <Header/>
+            <HeaderHooks/>
+            <HeaderStatic/>
         </div>
     );
 };
