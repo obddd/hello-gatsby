@@ -11,5 +11,13 @@ module.exports = {
     description: "Just learning gatsbyjs",
     author: "@obddd"
   },
-  plugins: [],
+  plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+  ],
 }
