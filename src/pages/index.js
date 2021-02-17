@@ -9,6 +9,9 @@ export default function Home() {
         <li>
           <Link to="/examples">Examples</Link>
         </li>
+        <li>
+          <Link to="/images">Images</Link>
+        </li>
       </ul>
     </div>
   )
