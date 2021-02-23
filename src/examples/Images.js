@@ -30,15 +30,15 @@ const Images = () => {
     <Wrapper>
       <article>
         <h3>Basic Image</h3>
-        <img src={img} className="basic" />
+        <img src={img} className="basic" alt='desert' />
       </article>
       <article>
         <h3>Fixed Image</h3>
-        <Image fixed={data.fixed.childImageSharp.fixed} />
+        <Image fixed={data.fixed.childImageSharp.fixed} alt='mountain' />
       </article>
       <article>
         <h3>Fluid Image</h3>
-        <Image fluid={data.fluid.childImageSharp.fluid} />
+        <Image fluid={data.fluid.childImageSharp.fluid} alt='sky' />
       </article>
     </Wrapper>
   )
