@@ -1,7 +1,7 @@
 import React from 'react';
 import SingleTour from './SingleTour'
 
-const Tour = () => {
+const Tours = () => {
     return (
         <div>
             this is tour component
@@ -10,4 +10,4 @@ const Tour = () => {
     );
 };
 
-export default Tour;
+export default Tours;
