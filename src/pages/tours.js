@@ -21,9 +21,11 @@ export const getTours = graphql`
         name 
         price
         country
+        slug
+        days
         images{
           fluid{
-            src
+            ...GatsbyContentfulFluid_withWebp
           }
         }
       }

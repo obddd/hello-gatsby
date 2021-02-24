@@ -1,14 +1,18 @@
-import React from 'react';
-import SingleTour from './SingleTour'
+import React from "react"
+import SingleTour from "./SingleTour"
+import styles from "../../css/items.module.css"
 
-const Tours = ({tours}) => {
-    console.log(tours)
-    return (
-        <div>
-            this is tour component
-            <SingleTour/>
-        </div>
-    );
-};
+const Tours = ({ tours }) => {
+  return (
+    <section className={styles.tours}>
+      <h2>Our Tours</h2>
+      <div className={styles.center}>
+        {tours.map(( {node} ) => (
+          <SingleTour key={node.id} tour={node}/>
+        ))}
+      </div>
+    </section>
+  )
+}
 
-export default Tours;
+export default Tours
