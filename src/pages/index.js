@@ -15,6 +15,9 @@ export default function Home() {
         <li>
           <Link to="/tours">Tours</Link>
         </li>
+        <li>
+          <Link to="/functions">Function</Link>
+        </li>
       </ul>
     </div>
   )
