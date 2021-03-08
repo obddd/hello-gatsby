@@ -9,6 +9,7 @@ const Function = () => {
       setData(tempData)
     })();
   }, [])
+  console.log(data.message)
   return <div>{data.message}</div>
 }
 
