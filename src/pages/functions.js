@@ -1,11 +1,13 @@
 import React from "react"
-import Function from "../components/function/Function"
+import AddFunction from "../components/function/AddFunction"
+import GetFunction from "../components/function/GetFunction"
 
 const functions = () => {
   return (
     <div>
       this message is coming from netlify functions
-      <Function />
+      <GetFunction />
+      <AddFunction/>
     </div>
   )
 }

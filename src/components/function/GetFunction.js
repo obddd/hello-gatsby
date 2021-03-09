@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 
-const Function = () => {
+const GetFunction = () => {
   const [data, setData] = useState("")
   useEffect(() => {
     (async () => {
@@ -9,8 +9,7 @@ const Function = () => {
       setData(tempData)
     })();
   }, [])
-  console.log(data.message)
   return <div>{data.message}</div>
 }
 
-export default Function
+export default GetFunction
