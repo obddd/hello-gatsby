@@ -18,6 +18,9 @@ export default function Home() {
         <li>
           <Link to="/functions">Function</Link>
         </li>
+        <li>
+          <Link to="/apolloLambdaFunctions">GraphQl Lambda Function</Link>
+        </li>
       </ul>
     </div>
   )
