@@ -1,9 +1,12 @@
 const { ApolloServer, gql } = require("apollo-server-lambda")
+const faunadb = require('faunadb'),
+q = faunadb.query;
 
 const typeDefs = gql`
   type Query {
     message: String
     user: User
+    title: String
   }
   type User {
     name: String
@@ -21,6 +24,17 @@ const resolvers = {
         age: 22,
       }
     },
+    title: async (parent, args, context) => {
+      try {
+          const client = new faunadb.Client({secret: process.env.FAUNADB_SERVER_SECRET})
+          let result = await client.query(
+              q.Get(q.Ref(q.Collection('posts'), '292327531019764229'))
+          )
+          return result.data.title
+      } catch (error) {
+          return error.toString()
+      }
+  }
   },
 }
 

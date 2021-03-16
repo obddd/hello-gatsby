@@ -10,6 +10,7 @@ const APOLLO_QUERY = gql`
       name
       age
     }
+    title
   }
 `
 const ApolloLambda = () => {
@@ -28,6 +29,14 @@ const ApolloLambda = () => {
             Name:{data.user.name} Age:{data.user.age}
           </div>
         )}
+
+        {data && data.title && (
+          <div>
+            <h2>This data is coming from faunadb</h2>
+            {data.title}
+          </div>
+        )}
+
       </div>
     </div>
   )
